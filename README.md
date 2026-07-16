@@ -3,15 +3,17 @@ Tema: Krijimi i një website.
 
 Lënda: Sisteme multimediale.
 
+
 Të drejtat e Autorit (Copyright & Disclaimer)
 
 *Kodi dhe Dizajni: Grupi ynë.
 
 *Fotografitë: Fotot e përdorura në këtë projekt nuk janë pronë tona. Ato janë përdorur vetëm për qëllime akademike/demonstruese (jo-komerciale). Të gjitha të drejtat e fotove u takojnë autorëve të tyre përkatës.
 
+
 Punuan: 
 
-Alesja Hoxha
+  Alesja Hoxha
 *fustane.html
 *jumpsuits.html
 *pulovra.html
@@ -20,18 +22,18 @@ Alesja Hoxha
 *uljefemra.html
 
 
-Alessia Cidri
+  Alessia Cidri
 *bashkimi i website-it
 *shporta.html
 *footer.html
 
 
-Briselda Ulaj
+  Briselda Ulaj
 *1home.html
 *women.html
 
 
-Danjel Ndoka
+  Danjel Ndoka
 *login.html
 *singup.html
 *recoverpass.html
