@@ -1,0 +1,352 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shporta</title>
+    
+   <style>
+       
+       body{
+            background-color: #f2f2f2;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgb(46, 4, 4);
+            height: 100px;
+            padding: 30px;
+            color: white;
+        }
+       
+       header h1 {
+           margin-top: 0;
+           font-size: 4.5rem;
+           text-align: center;
+        }
+
+       
+        /*stilizimi i form*/
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 700px;
+            margin: 25px 40px 75px;
+        }
+        
+        fieldset{
+            background-color:lightgray;
+            border: 3px solid pink;
+            border-radius: 10px;
+            width: 600px;
+            padding: 20px;
+            margin: 30px;
+        }
+        
+        legend{
+            background-color: white;
+            border: 3px solid pink;
+            border-radius: 10px;
+            padding: 5px;
+            text-transform: uppercase;
+        }
+        
+        label{
+            display: block;
+            font-weight: bold;
+            padding: 8px;
+        }
+        
+        input{
+            width: 100%;
+            padding: 10px;
+            border-style: hidden;
+            border-radius: 10px;
+        }
+        
+        .required::after{
+            content: "*";
+            color: crimson;
+        }
+        
+        .form-em, .form-ad, .form-zip{
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+        }
+            
+        .form-em input, .form-ad input{
+            text-transform: capitalize;
+        }
+        
+        .form-zip #zip, .form-zip #info{
+            flex: 1;
+        }
+        
+        .form-zip input[type="checkbox"]{
+            width: 20px;
+            height: 20px;            
+        }
+        
+        button{
+            width: 600px;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            color: forestgreen;
+            background-color: darkseagreen;
+            cursor: pointer; 
+        }
+        
+        button:hover{
+            color: darkseagreen;
+            background-color: forestgreen;
+        }
+       
+       
+       
+       /*stilizimi i shportes*/
+    
+        .blej {
+            width:600px;
+            height: 230px;
+            margin: 25px 40px;
+            padding: 20px;
+            border: 3px solid pink;
+            border-radius: 10px;
+       }
+        
+        .item{
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid lightgray;
+            padding-bottom: 10px; 
+            
+        }
+        
+        .item-img{
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+            border-radius: 5px;
+            padding-right: 15px;
+        }
+        
+        .item-detaje p{
+            color: darkgray;
+        }
+        
+        .item-cmim{
+            margin-left: auto;
+            font-weight: bold;
+        }
+        
+        .all p{
+            display: flex;
+            justify-content: space-between;
+            
+        }
+        
+        .total{
+            font-weight: bold;
+            font-size: 18px;
+        }
+    
+       
+       /*bashkimi i form dh shportes*/
+       
+       .shporta{
+           display: flex;
+           justify-content: space-around;
+       }
+       
+    
+
+       
+    </style>
+    
+</head>
+    
+<body>
+    
+    <header>
+        <h1>THINK FASHION</h1>
+    </header>
+    <br><br><br><br><br><br><br><br><br><br><br>
+    
+    <div class="shporta">
+    
+    <form action="Porosit" method="post" onsubmit="perfundimiBlerjes()">
+        
+        <fieldset>
+            <legend> Kontakt </legend>
+            <label for="Email" class="required">Email</label>
+            <input type="email" id="Email" required> <br>
+            
+            <label for="Tel" class="required">Telefon</label>
+            <input type="tel" id="Tel" required> <br>
+        </fieldset>
+         
+             
+        <fieldset>
+    
+         <legend> Dergesa </legend>
+            
+        <div class="form-em">
+            
+         <label for="Emri" class="required">Emri</label>
+         <input type="text" id="Emri"> <br>
+         
+         <label for="Mbiemri" class="required" >Mbiemri</label>
+         <input type="text" id="Mbiemri" required> <br>  
+        
+        </div>
+         
+         
+        <div class="form-ad">
+         <label for="Adresa" class="required"> Adresa</label>
+         <input type="text" id="Adresa" required> <br>
+         
+         <label for="Qyteti" class="required"> Qyteti</label>
+         <input type="text" id="Qyteti" required> <br>
+            
+            
+        </div>  
+            
+        
+         <div class="form-zip">
+             
+         <label for="zip"> Kodi postar</label>
+         <input type=text id="zip" > <br>
+         
+         <input type="checkbox" id="info">Ruaje kete informacion per heren tjeter
+             
+        </div>
+         
+        </fieldset> <br>
+         <button type="submit" >Porosit</button> 
+        
+         <script>
+        function perfundimiBlerjes() {
+            const mesazh = "Blerja juaj perfundoi. Kontrolloni emailin ose numrin e telefonit per me teper informacion.";
+            alert(mesazh);
+        }
+        </script>
+         
+     </form>
+        
+        
+        
+        
+    
+   <div class="blej">
+        <div class="item">
+            <img src="img/puloversh.jpg" alt="Pulover e thjeshte" class="item-img">
+            <div class="item-detaje">
+                <h4>PULOVER E THJESHTE</h4>
+                <p>Gri / Standarde</p>
+            </div>
+            <div class="item-cmim">
+                <p>3,000.00 LEKE</p>
+            </div>
+        </div>
+        <div class="all">
+            <p>Totali: <span>3,000.00 LEKE</span></p>
+            <p>Transporti: <span>FALAS</span></p>
+            <p class="total">Total: <span>3,000.00 LEKE</span></p>
+        </div>
+    </div>
+
+    
+    </div> 
+    
+
+<footer>
+    
+    
+<style>
+    
+    .footer{
+        background-color: ghostwhite;
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+    }
+    
+    .footer ul{
+        list-style: none;
+        padding: 0;
+    }
+    
+    .footer a{
+        text-decoration: none;
+    }
+    
+    .footer a:link { 
+        color:black;
+    }
+    
+    .footer a:visited {
+        color: black;
+    }
+    
+    .footer a:hover {
+        color: palevioletred;
+        text-decoration: underline;
+    }
+    
+    .footer a:active {
+        color: coral;
+    }
+    
+    footer span {
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+    }
+    
+</style>
+    
+<div class="footer">
+        
+    <img src="img/f.png" width=200 height=200>
+    
+    <div class="footer-about">
+        <h3>Kontakt</h3>
+        <p>Sherbimi ndaj klientit:</p>
+        <p>Orari: E hene - E shtune, 09:00 - 21:00</p>
+        <p>☏ +355 69 87 54 321</p>
+        <p>✉︎ info@thinkfashion.al</p>
+        <p>🏠︎ Rr. Adresa, Tirane</p>
+    </div>
+    
+    <div class="footer-links">
+        <h3>Rreth politikave</h3>
+        <ul>
+            <li><a href="tk.html">Termat dhe kushtet</a></li>
+            <li><a href="k.html">Kthimet</a></li>
+        </ul>
+    </div>
+        
+    <div class="footer-social">
+        <h3> Na ndiqni ne:</h3>
+        <ul> 
+            <li> <a href="https://www.facebook.com/">Facebook</a> </li>
+            <li> <a href="https://www.instagram.com/">Instagram</a> </li>
+        </ul>
+        
+    </div>
+    
+</div>
+    <span> © 2025 THINK FASHION - Shqiperi • Politikat e Privatesise • Te gjitha te drejtat e rezervuara.</span>
+
+    
+</footer>
+    
+</body>
+</html>
